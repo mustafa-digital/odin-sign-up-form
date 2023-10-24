@@ -4,9 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign Up</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="sign-up-page">
+        <section class="logo-section">
+            <div class="odin-logo">
+                <h1 class="odin-title">Odin</h1>
+            </div>
+            <footer class="logo-footer-image-credits">
+                <p>Photo by <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Hallie West</a> on 
+                    <a href="https://unsplash.com">Unsplash</a></p>
+            </footer>
+        </section>
+        <section class="form-section">
+            <header class="form-header">
+                <div class="form-header-content">
+                    <p>This is not a real online service! You know you need something
+                        like this in your life to help you realize your deepest dreams.<br>
+                        Sign up now to get started.
+                    </p>
+                    <br>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
+            </header>
+            <div class="form-body">
+                <h2>Let's do this!</h2>
+                <p>Required fields are labelled with a "*"</p>
+                <form method="post" action="" id="register-form">
+                    <p>
+                        <label for="fname">First Name </label> 
+                        <input type="text"
+                               id="fname"
+                               name="fname"
+                               placeholder="John" required />
+                        <span></span>
+                    </p>
+
+                    <p>
+                        <label for="lname">Last Name</label>
+                        <input type="text",
+                            id="lname",
+                            name="lname"
+                            placeholder="Smith" required />
+                        <span></span>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address</label>
+                        <input type="email"
+                               id="email"
+                               name="email" 
+                               placeholder="example@site.com" required />
+                        <span></span>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone Number</label> 
+                        <input type="tel"
+                               id="phone"
+                               name="phone" 
+                               placeholder= "999-9999"
+                               pattern="[0-9]{3}-[0-9]{4}"/>
+                    </p>
+
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password"
+                               id="password"
+                               name="password" 
+                               placeholder= " " 
+                               minlength="6" required />
+                        <span></span>
+                    </p>
+
+                    <p>
+                        <label for="pass-confirm">Confirm Password</label>
+                        <input type="password"
+                               id="pass-confirm" 
+                               placeholder= " " required />
+                        <span></span>
+                    </p>
+            </form>
+        </div>
+            <footer class="form-footer">
+                <div>
+                    <button class="btn-create-acc" type="submit" form="register-form">Create Account</button>
+                </div>
+                <p>Already have an account? <span><a class="login-link" href="">Log In</a></span></p>
+
+            </footer>
+        </section>
+    </div>
 </body>
 </html>
