@@ -172,6 +172,20 @@ body {
     top: -15px;
   }
 
+  .password-p {
+    position: relative;
+  }
+
+  .password-message-text {
+    position: absolute;
+    cursor: default;
+    color: red;
+    font-size: 0.68em;
+    visibility: hidden;
+    left: 0px;
+    top: 45px;
+  }
+
   input[type="text"],
   input[type="email"],
   input[type="tel"],
